@@ -1,0 +1,14 @@
+ssh-keygen -t rsa -f "C:\Users\thale\.ssh\github" -C "thaleslqa@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add /c/Users/thale/.ssh/GitHub
+
+
+# Iniciando o git
+git init
+git config --global user.name "Thales Lacerda"
+git config --global user.email "thaleslqa@gmail.com"
+git remote add origin git@github.com:thaleslqa/temp-repo.git
+git add .
+git commit -m 'Initial'
+git push origin master
+
